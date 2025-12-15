@@ -12,7 +12,8 @@
 2. [Tech Stack](#tech-stack)
 3. [Folder Structure](#folder-structure)
 4. [API Reference](#api-reference)
-
+5. [Frontend Component Example](#code-example)
+6. 
 ---
 
 ## 🎯 Project Overview
@@ -31,7 +32,7 @@
 
 | Technology | Purpose |
 |------------|---------|
-| **React Native** | Cross-platform mobile framework |
+| **React Native (javascript)** | Cross-platform mobile framework |
 | **React Navigation** | Navigation between screens |
 | **React Native Reanimated** | Smooth animations |
 | **FontAwesome** | Icon library |
