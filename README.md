@@ -13,7 +13,8 @@
 3. [Folder Structure](#folder-structure)
 4. [API Reference](#api-reference)
 5. [Frontend Component Example](#code-example)
-6. 
+
+
 ---
 
 ## 🎯 Project Overview
