@@ -254,6 +254,22 @@ export const mockMessages = [
 
 ---
 
+## Assests:
+
+Mockup app UI - https://guestii-nightlife-at-pqao.bolt.host/
+
+![Verification tick](https://github.com/user-attachments/assets/50a21281-bffb-4e21-90c8-77a82b8f5754)[Uploading Alias-Bold.otf…]()
+
+<img width="1920" height="1080" alt="Guestii logo png" src="https://github.com/user-attachments/assets/29b82032-6d16-409c-b729-6de6883ab583" />
+
+<img width="1920" height="1080" alt="guestii logo png white" src="https://github.com/user-attachments/assets/67743dd1-104a-4587-954c-12ab9bbd5c95" />
+
+[guestii app assests.zip](https://github.com/user-attachments/files/24159900/guestii.app.assests.zip)  << fonts can be found here as well as other assests
+
+
+
+
+
 ## 📞 Questions?
 
 If you're unsure about anything, please ask before implementing. We'd rather clarify upfront than refactor later.
