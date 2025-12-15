@@ -135,6 +135,78 @@ guestiis/
 | GET | `/api/mobile/guestiis/events/:eventId/messages` | Get event messages |
 | PUT | `/api/mobile/guestiis/messages/:id/read` | Mark message as read |
 
+### Frontend Component Example
+```javascript
+const GuestCard = React.memo(({ guest, onPress, onLongPress, onSelect, isSelected, selectionMode, styles, index }) => {
+  const done = guest.payment_status === 'completed';
+
+  const handlePress = () => {
+    if (selectionMode && !done) {
+      onSelect(guest)
+    } else if (!done) {
+      onPress(guest)
+    }
+  }
+
+  return (
+    <FadeIn delay={index * 30} style={styles.cardWrapper}>
+      <TouchableOpacity
+        style={[styles.card, done && styles.cardDone, isSelected && styles.cardSelected]}
+        onPress={handlePress}
+        onLongPress={() => !done && onLongPress(guest)}
+        activeOpacity={done ? 1 : 0.7}
+        disabled={done}
+        delayLongPress={300}
+      >
+        {selectionMode && !done && (
+          <View style={[styles.cardCheckbox, isSelected && styles.cardCheckboxActive]}>
+            {isSelected && <FontAwesomeIcon icon="fa-solid fa-check" size={12} color="#fff" />}
+          </View>
+        )}
+
+        <View style={[styles.cardAvatar, done ? styles.avatarDone : styles.avatarPending]}>
+          <Text style={[styles.avatarText, done ? styles.avatarTextDone : styles.avatarTextPending]}>{getInitials(guest.first_name, guest.last_name)}</Text>
+        </View>
+
+        <View style={styles.cardBody}>
+          <Text style={styles.cardName} numberOfLines={1}>{guest.first_name} {guest.last_name}</Text>
+          <View style={styles.cardMeta}>
+            <Text style={styles.cardTime}>{getTimeAgo(guest.admitted_date)}</Text>
+            
+            {guest.ticket_type && (
+              <>
+                <View style={styles.metaDot}/>
+                <Text style={styles.cardTicket}>{guest.ticket_type}</Text>
+              </>
+            )}
+          </View>
+        </View>
+
+        {done ? (
+          <View style={styles.cardRightDone}>
+            {guest.ticket_price > 0 && <Text style={styles.cardPriceDone}>${guest.ticket_price}</Text>}
+            
+            <View style={styles.checkBadge}>
+              <FontAwesomeIcon icon="fa-solid fa-check" size={14} color="#49b283" />
+            </View>
+          </View>
+        ) : (
+          <View style={styles.cardRight}>
+            {guest.ticket_price > 0 && <Text style={styles.cardPrice}>${guest.ticket_price}</Text>}
+            
+            {!selectionMode && (
+              <View style={styles.arrowBadge}>
+                <FontAwesomeIcon icon="fa-solid fa-chevron-right" size={12} color="#fff" />
+              </View>
+            )}
+          </View>
+        )}
+      </TouchableOpacity>
+    </FadeIn>
+  );
+});
+```
+
 ### Mock Data Example
 
 ```javascript
