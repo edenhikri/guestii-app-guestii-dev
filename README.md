@@ -11,13 +11,7 @@
 1. [Project Overview](#project-overview)
 2. [Tech Stack](#tech-stack)
 3. [Folder Structure](#folder-structure)
-4. [Design System](#design-system)
-5. [Core Modules](#core-modules)
-6. [Component Specifications](#component-specifications)
-7. [API Reference](#api-reference)
-8. [Code Patterns & Examples](#code-patterns--examples)
-9. [Best Practices](#best-practices)
-10. [Submission Guidelines](#submission-guidelines)
+4. [API Reference](#api-reference)
 
 ---
 
