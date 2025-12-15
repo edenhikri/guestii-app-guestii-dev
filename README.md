@@ -218,8 +218,8 @@ export const mockEvents = [
   {
     _id: 'OBJECT_ID',
     name: 'Summer Rooftop Party',
-    start_date: '2024-12-21T20:00:00Z',
-    end_date: '2024-12-21T22:00:00Z',
+    start_date: '2025-12-21T20:00:00Z',
+    end_date: '2025-12-21T22:00:00Z',
     venueId: { _id: "OBJECT_ID", name: 'Sky Lounge, Melbourne', address: '123 Collins St, Melbourne VIC 3000' },
     banner_image_url: 'https://example.com/event1.jpg',
     ticket_type: 'VIP Access',
@@ -235,8 +235,8 @@ export const mockPlusOnes = [
     _id: 'OBJECT_ID',
     first_name: 'John',
     last_name: 'Doe',
-    phone: '+61 400 000 000' // if it was added. they can also invite just names,
-    invited_at: '2024-12-01T10:00:00Z',
+    phone: '+61 400 000 000', // if it was added. they can also invite just names
+    invited_at: '2025-12-01T10:00:00Z'
   },
   // ... more plus ones
 ];
@@ -246,7 +246,7 @@ export const mockMessages = [
     _id: 'OBJECT_ID',
     title: 'Event Update',
     msg: 'We have added extra parking spaces for VIP guests.',
-    sent_at: '2024-12-15T14:30:00Z'
+    sent_at: '2025-12-15T14:30:00Z'
   },
   // ... more messages
 ];
