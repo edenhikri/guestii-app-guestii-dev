@@ -254,7 +254,7 @@ export const mockMessages = [
 
 ---
 
-## Assests:
+## Assets:
 
 Mockup app UI - https://guestii-nightlife-at-pqao.bolt.host/
 
@@ -265,6 +265,13 @@ Mockup app UI - https://guestii-nightlife-at-pqao.bolt.host/
 <img width="1920" height="1080" alt="guestii logo png white" src="https://github.com/user-attachments/assets/67743dd1-104a-4587-954c-12ab9bbd5c95" />
 
 [guestii app assests.zip](https://github.com/user-attachments/files/24159900/guestii.app.assests.zip)  << fonts can be found here as well as other assests
+
+PROMOTER APP EXISTING LOOK:
+
+![WhatsApp Image 2025-12-15 at 13 39 58_cd5f486e](https://github.com/user-attachments/assets/34561734-8ad2-4b57-ba33-c7a9cc109ba6)
+![WhatsApp Image 2025-12-15 at 13 39 58_533f0b98](https://github.com/user-attachments/assets/6e164890-65c4-4488-a15e-c4a75540089c)
+![WhatsApp Image 2025-12-15 at 13 39 58_6347874e](https://github.com/user-attachments/assets/ae7b75bc-9f17-45b0-8aa9-2c2ab65a5c42)
+
 
 
 
